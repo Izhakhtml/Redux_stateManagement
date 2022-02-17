@@ -1,0 +1,31 @@
+.App {
+  text-align: center;
+}
+
+.base_container{
+display: grid;
+grid-template-areas: 
+'header header header header header'
+'menu menu main main main'
+'menu menu main main main'
+'footer footer footer footer footer';
+width: 100vw;
+height: 100vh;
+grid-template-columns:3%;
+grid-template-rows:15% 50% 20%;
+}
+.header{grid-area: header;}
+.footer{grid-area: footer;}
+.sidebar{grid-area: menu;}
+.main{grid-area: main;}
+.div{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.details_todo{
+  border: 2px solid black;
+  width: 30vw;
+  height: 40vh;
+  margin: 5%;
+}
